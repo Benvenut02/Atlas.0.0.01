@@ -30,7 +30,7 @@ const Sidebar = () => {
         width: SidebarWidth,
     }}
     >
-        <div className='text-3xl border-purple-700 w-17 m-4 p-1 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full'>
+        <div className='text-3xl border-orange-700 w-17 m-4 p-1 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full'>
         
             <img src="\images\Logo.jpg" alt="Logo" className='w-20 rounded-full ' />
             
@@ -52,18 +52,18 @@ const Sidebar = () => {
   )
 }
 
-const SidebarIcon = ({icon,path, label, active}) => {
+const SidebarIcon = ({icon,path, label}) => {
     return (
             <NavLink to={path} 
                 className={({isActive})=> {
                     return isActive ? 
-                    "text-2xl w-full h-20 justify-center flex flex-col items-center text-white font-semibold text-xl bg-gray-700 border-l-4 border-lime-400 rounded-r-[5px]" : 
+                    "text-2xl w-full h-20 justify-center flex flex-col items-center text-white font-semibold text-xl bg-gray-700 border-l-4 border-orange-400 rounded-r-[5px]" : 
                     `flex flex-col 
                 items-center text-2xl
                 text-gray-400
                 w-full
                 hover:border-l-4
-                hover:border-violet-600
+                hover:border-orange-600
                 hover:rounded-l-none
                 hover:text-white
                 hover:font-semibold

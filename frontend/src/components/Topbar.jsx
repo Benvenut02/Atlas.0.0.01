@@ -35,8 +35,6 @@ const Topbar = (props) => {
     <>
     <div className='
     flex sticky bottom-0
-        bg-purple-900 
-        bg-gradient-to-r from-blue-800/30 to-purple-600
         bg-clip-border
         shadow-lg
         items-center 
@@ -62,7 +60,7 @@ const Topbar = (props) => {
                 </div> 
                
                
-          <div className='bg-black rounded-full px-6 p-2 flex gap-10  mr-6
+          <div className='bg-lime-500 rounded-full px-6 p-2 flex gap-10  mr-6
                 ml-auto'>
 
                   <ToggleButton 

@@ -95,7 +95,7 @@ const DisBtns = (props) => {
       <div
         className="flex
         mr-4
-        bg-gradient-to-r from-blue-800/20 to-purple-600
+        bg-gradient-to-r from-lime-400 to-green-950/80
         text-transparent
         p-1
         px-1
@@ -117,7 +117,7 @@ const DisBtns = (props) => {
           <GradText label={props.label} />
         </div>
       </div>
-      <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-bold">
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-lime-400 font-bold">
         {props.value}
       </p>
     </div>
@@ -138,7 +138,7 @@ const DisBtns_2 = (props) => {
       <div
         className="flex
         mr-4
-       bg-gradient-to-r from-blue-800/80 to-purple-600
+       bg-gradient-to-r from-lime-800/80 to-lime-600
         text-transparent
         p-1
         px-1
@@ -166,7 +166,7 @@ const DisBtns_2 = (props) => {
 
 const GradText = (props) => {
   return (
-    <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+    <p className="text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-lime-400">
       {props.label}
     </p>
   );
@@ -174,7 +174,7 @@ const GradText = (props) => {
 
 const GradText_2 = (props) => {
   return (
-    <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-bold">
+    <p className="text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-green-900 font-bold">
       {props.label}
     </p>
   );
@@ -184,7 +184,7 @@ const GradDiv = (props) => {
   return (
     <div
       className="flex
-        bg-violet-900/20
+        bg-green-900/20
         rounded-xl
         p-8
         px-15
@@ -200,7 +200,7 @@ const GradDivHalf = (props) => {
   return (
     <div
       className="
-        bg-gradient-to-r from-blue-800/10 to-purple-600/50
+        bg-gradient-to-r from-lime-800/10 to-green-600/50
         rounded-xl
         p-8
         px-15
