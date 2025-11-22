@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: beige;
+  font-family: 'Pixels';
+}
+
+
+@font-face {
+  font-family: 'Pixels';
+  src: url('D:\AshReact\Atlas\frontend\public\fonts\boldpixels\BoldPixels.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pixelsDiv {
+  font-family: 'Pixels';
+}
