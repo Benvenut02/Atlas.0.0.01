@@ -60,7 +60,7 @@ const Topbar = (props) => {
                 </div> 
                
                
-          <div className='bg-lime-500 rounded-full px-6 p-2 flex gap-10  mr-6
+          <div className='bg-gray-900 rounded-full px-6 p-2 flex gap-10  mr-6
                 ml-auto'>
 
                   <ToggleButton 
