@@ -166,7 +166,7 @@ const DisBtns_2 = (props) => {
 
 const GradText = (props) => {
   return (
-    <p className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400">
+    <p className="gradText">
       {props.label}
     </p>
   );
@@ -174,7 +174,7 @@ const GradText = (props) => {
 
 const GradText_2 = (props) => {
   return (
-    <p className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-900 font-bold">
+    <p className="gradText_2">
       {props.label}
     </p>
   );
@@ -183,12 +183,9 @@ const GradText_2 = (props) => {
 const GradDiv = (props) => {
   return (
     <div
-      className="flex
-        bg-amber-900/20
-        rounded-xl
-        p-8
-        px-15
-        m-6
+      className="
+      gradDiv
+      
         "
     >
       {props.children}
@@ -199,12 +196,7 @@ const GradDiv = (props) => {
 const GradDivHalf = (props) => {
   return (
     <div
-      className="
-        bg-gradient-to-r from-orange-800/10 to-amber-600/50
-        rounded-xl
-        p-8
-        px-15
-        
+      className=" gradDivHalf
         "
     >
       {props.children}
