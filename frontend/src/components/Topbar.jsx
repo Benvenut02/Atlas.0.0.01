@@ -34,10 +34,7 @@ const Topbar = (props) => {
   return (
     <>
     <div className='
-    flex sticky bottom-0
-        bg-clip-border
-        shadow-lg
-        items-center 
+    topbar
         '
         style={{
             marginLeft: SidebarWidth,
