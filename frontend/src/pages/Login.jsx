@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../util";
-
+import {Button} from 'pixel-retroui'
 
 const Login = () => {
     const [LoginInfo, setLoginInfo] = useState({
@@ -75,7 +75,8 @@ const Login = () => {
         <div>
              <h1 className='text-9xl font-bold 
         uppercase 
-        '>Atlas</h1>
+        ' style={{fontSize: "100px"}}
+        >Atlas</h1>
         <h2 className='pixelsDiv text-sm leading-0'>Detect. Explain. Verify</h2>    
         </div>
        
@@ -106,10 +107,15 @@ const Login = () => {
             />
           </div>
 
-          <button type="submit" className="p-4 bg-lime-400 rounded-full m-4">
+          <Button
+      bg="#5dd20f"
+  textColor="#ffffff"
+  borderColor="#493c3c"
+  shadow="#4f744e"
+          type="submit" >
             Login
-          </button>
-          <p className='text-3xl'>Don't have an account? <Link to="/signup" className='text-lime-400'>Signup</Link> </p>
+          </Button>
+          <p className='text-3xl'>Don't have an account? <Link to="/signup" className='text-lime-400' style={{color: "#5dd20f"}}>Signup</Link> </p>
         </form>
       </div>
       <ToastContainer />

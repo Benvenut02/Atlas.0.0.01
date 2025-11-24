@@ -1,6 +1,7 @@
 import React from "react";
 import { SidebarWidth } from "./Sidebar";
 import { TopbarHeight } from "./Topbar";
+import { Button, Card } from "pixel-retroui";
 
 const MainDashboard = (props) => {
   return (
@@ -13,9 +14,9 @@ const MainDashboard = (props) => {
     justify-evenly
     items-center"
       >
-        <DisBtns label="Misinformation" value="6" />
-        <DisBtns label="Warnings" value="7" />
-        <DisBtns label="False Likelihood" value="56.8%" />
+        <DisBtns_Pixels label="Misinformation" value="6" />
+        <DisBtns_Pixels label="Warnings" value="7" />
+        <DisBtns_Pixels label="False Likelihood" value="56.8%" />
       </div>
 
       <div
@@ -33,7 +34,7 @@ const MainDashboard = (props) => {
                 NATURAL, TRUTH, MEDICINE, NATURE, THROUGH, VACCINES, FREEDOM
               </h2>
               <h1 className="uppercase  text-4xl mt-5"><GradText_2 label="7 suspicious claims detected:  " /></h1>
-              <div className="flex flex-wrap mt-5 space-y-4 ">
+              <div className="flex flex-wrap gap-2 mt-5 space-y-4 justify-center ">
                 <DisBtns_2 label="miracle cure" />
                 <DisBtns_2 label="cure cancer" />
                 <DisBtns_2 label="5G causes covid" />
@@ -46,7 +47,7 @@ const MainDashboard = (props) => {
           </GradDiv>
         </div>
         <div className="col-span-6 ml-6">
-          <GradDivHalf>
+          <GradDiv>
             <div
               className="
             text-5xl mb-6
@@ -60,8 +61,10 @@ const MainDashboard = (props) => {
               <GradText label="Recent Articles with High Misinformation" />
               Another Gradient Div
             </div>
-          </GradDivHalf>
+          </GradDiv>
         </div>
+      
+      </div>
         <div className="col-span-4 mr-6">
           <GradDivHalf>
             <div
@@ -73,13 +76,112 @@ const MainDashboard = (props) => {
               <h1 className="font-bold text-5xl">Sources</h1>
               <GradText_2  label="Certified Sources only " />
             </div>
-            <div>Another Gradient Div</div>
+            <div className="text-2xl">
+              Another Gradient Div jsajkdhahdkhadkjhadka
+              dnakdahdhashda
+dadadadadassdadadadasddaadadad
+dadadadadassdadadadasd
+dadadadadassdadadadasd      
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum debitis delectus consequatur aperiam non saepe vitae minus obcaecati ipsam. Inventore, illum? Quidem, modi. Doloribus cumque aperiam amet inventore ipsa.
+    Lorem ipsum dolor sit amet consectetur adipisici
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio quidem reprehenderit ipsa est nemo officiis provident, nulla quam tempore? Consequatur voluptate, excepturi consectetur autem alias impedit porro itaque vitae!
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, ipsum eius ad a similique repudiandae sequi totam, dolores dolorem earum dolore provident necessitatibus quasi natus, architecto quos! At, amet! Error!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. In id aspernatur neque, optio aperiam ipsam, vel placeat obcaecati nesciunt minus repudiandae eaque, corporis facilis rerum omnis tenetur iusto fugiat quos.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum dolor nam cum praesentium itaque ea nemo inventore dolorem illo recusandae, id reiciendis ipsam, quasi vero debitis impedit alias aliquid. Similique.
+
+
+
+    dadadadadassdadadadasd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+            </div>
           </GradDivHalf>
         </div>
-      </div>
     </div>
   );
 };
+
+
+const DisBtns_Pixels = (props) => {
+  return (
+    <div
+      className="
+        flex
+        flex-col
+        items-center
+        text-6xl
+        space-y-4
+        "
+    >
+      <Card
+bg="#000000"
+  textColor="#fea239"
+  borderColor="#df7716"
+  shadowColor="#781212"
+
+        className="
+        "
+      >
+        <div
+          className="
+          disBtn_Child
+            
+            "
+        >
+          <GradText label={props.label} />
+        </div>
+      </Card>
+      <p className="gradText">
+        {props.value}
+      </p>
+    </div>
+  );
+};
+
+
+const DisBtns_2_Pixels = (props) => {
+  return (
+
+      <Card
+        bg="#000000"
+        textColor="#fea239"
+        borderColor="#df7716"
+        shadowColor="#781212"
+
+        style={{width: "450px "}}
+        className=" text-center
+        "
+      >
+        <div
+          className=" text-2xl
+           "
+        >
+          <GradText label={props.label} />
+        </div>
+      </Card>
+  );
+};
+
+
+
 
 const DisBtns = (props) => {
   return (
