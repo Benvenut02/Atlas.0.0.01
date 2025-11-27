@@ -1,12 +1,12 @@
 @import "tailwindcss";
-@import 'pixel-retroui/dist/index.css';
- @import 'pixel-retroui/dist/fonts.css';
-
+/*
+@import "pixel-retroui/dist/index.css";
+*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: #010B13;
   color: beige;
   font-family: 'Pixels';
 }
@@ -45,8 +45,12 @@ body {
 
   .gradDivHalf{
     @apply rounded-xl
-        p-8 px-15
-        bg-gradient-to-r  from-orange-800/10 to-amber-600/50
+        p-8 px-15 m-6
+        h-[30rem]
+        text-2xl
+
+    bg-black
+        overflow-y-auto
   }
 
   .disBtn_Parent{
@@ -64,7 +68,7 @@ body {
 
   .disBtn_Text{
     @apply text-transparent bg-clip-text font-bold
-    bg-gradient-to-r from-orange-500 to-yellow-400 
+    bg-gradient-to-r from-orange-500 to-yellow-400
   }
 
   .disBtn_2_Parent {
@@ -95,4 +99,40 @@ body {
 }
 
 /* Sidebar */
+@layer components {
+
+    .pixel-button {
+        background-color: #000000;
+        color: #fea239;
+        border: 2px solid #df7716;
+        padding: 10px 20px;
+        font-size: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 4px 4px 0px #781212; /* Pixelated shadow */
+        transition: all 0.1s ease;
+    }
+
+    .pixel-button:hover {
+        background-color: #3e1313;
+        color: #fff;
+        box-shadow: 2px 2px 0px #000;
+        transform: translate(2px, 2px); /* Simulate button press */
+    }
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+}
+
 

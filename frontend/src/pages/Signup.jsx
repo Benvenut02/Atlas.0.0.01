@@ -88,6 +88,7 @@ const Signup = () => {
               name="name"
               placeholder="name"
               value={SignupInfo.name}
+              className="pl-4"
             />
           </div>
           <div>
@@ -98,6 +99,7 @@ const Signup = () => {
               name="email"
               placeholder="email"
               value={SignupInfo.email}
+              className="pl-4"
             />
           </div>
 
@@ -109,6 +111,7 @@ const Signup = () => {
               name="password"
               placeholder="password"
               value={SignupInfo.password}
+              className="pl-4"
             />
           </div>
 

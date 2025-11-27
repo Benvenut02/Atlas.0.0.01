@@ -93,6 +93,7 @@ const Login = () => {
               placeholder="email"
               autoFocus
               value={LoginInfo.email}
+              className="pl-4"
             />
           </div>
 
@@ -104,9 +105,11 @@ const Login = () => {
               name="password"
               placeholder="password"
               value={LoginInfo.password}
+              className="pl-4"
             />
           </div>
 
+            {/*
           <Button
       bg="#5dd20f"
   textColor="#ffffff"
@@ -115,6 +118,10 @@ const Login = () => {
           type="submit" >
             Login
           </Button>
+          */}
+            <button type="submit" className="p-4 bg-lime-400 rounded-full m-4">
+                Login
+            </button>
           <p className='text-3xl'>Don't have an account? <Link to="/signup" className='text-lime-400' style={{color: "#5dd20f"}}>Signup</Link> </p>
         </form>
       </div>
